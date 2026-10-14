@@ -1,13 +1,22 @@
-# PwnFox
+# PwnFoxy
 
-Workflow to enable customization and coloring HTTP requests from the [PwnFox addon](https://github.com/yeswehack/PwnFox)
+Caido plugin for the [PwnFoxy](https://github.com/la1n23/PwnFoxy) browser extension.
 
-## Installation
+Colors HTTP request rows based on the `X-PwnFoxy-Color` header that PwnFoxy injects per Firefox container.
 
-Install this plugin directly from the Caido store.
+All 8 Firefox container colors are supported: blue, turquoise, green, yellow, orange, red, pink, purple.
+
+## Install
+
+Build the plugin and load `dist/plugin_package.zip` in Caido under Plugins.
 
 ## Usage
 
-This plugin installs a passive workflow that will automatically colorize them based on the custom rules defined in the PwnFox extension.
+Enable the passive workflow from the Workflows page. Requests with `X-PwnFoxy-Color` headers will be colored automatically.
 
-Enable / disable the workflow from the Workflow page.
+## Build
+
+```
+pnpm install
+pnpm build
+```
