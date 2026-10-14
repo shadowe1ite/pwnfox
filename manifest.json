@@ -1,15 +1,15 @@
 {
-  "id": "pwnfox",
-  "name": "PwnFox",
-  "version": "0.0.1",
-  "description": "Integration with the PwnFox browser extension",
+  "id": "pwnfoxy",
+  "name": "PwnFoxy",
+  "version": "0.1.0",
+  "description": "Integration with the PwnFoxy browser extension",
   "author": {
-    "name": "SyzikSecu"
+    "name": "shadowe1ite"
   },
   "plugins": [
     {
       "kind": "workflow",
-      "id": "pwnfox-passive",
+      "id": "pwnfoxy-passive",
       "name": "Passive Workflow",
       "definition": "workflow/definition.json"
     }
